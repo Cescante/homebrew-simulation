@@ -62,6 +62,7 @@ class Ogre19 < Formula
       "-DOGRE_BUILD_SAMPLES:BOOL=FALSE",
       "-DOGRE_INSTALL_SAMPLES:BOOL=FALSE",
       "-DOGRE_INSTALL_SAMPLES_SOURCE:BOOL=FALSE",
+      "-DOGRE_CONFIG_ENABLE_LIBCPP_SUPPORT:BOOL=TRUE",
     ]
     cmake_args << "-DOGRE_BUILD_PLUGIN_CG=OFF" unless build.include? "with-cg"
     cmake_args.concat(std_cmake_args)
